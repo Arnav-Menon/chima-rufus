@@ -47,7 +47,7 @@ def crawl_links(soup, base_url, keywords):
     vectorizer.fit(keywords)
 
     relevant_links = [a['href'] for a in soup.find_all('a', href=True) if is_relevant(a.text, keywords)]
-    links = relevant_links[:1] #TODO change back to 5
+    links = relevant_links[:5]
 
     filtered_links = []
 
