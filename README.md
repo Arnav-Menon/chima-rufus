@@ -40,6 +40,38 @@ results = client.scrape("https://www.nba.com", instructions)
 print(results)
 ```
 
+# Setup
+
+## Prerequisites
+
+- Python 3.9 or above (3.11 recommended)
+- Open in VSCode and install recommmended extensions for optimal dev experience
+- sudo apt install python3.x-venv (For LINUX)
+
+## Create virtual environment
+
+```bash
+python -m venv .venv
+```
+
+## Activate virtual environment
+
+```bash
+#UNIX
+source .venv/bin/activate
+
+#Windows
+.venv/Scripts/activate.bat
+#OR
+.venv/Scripts/Activate.ps1
+```
+
+## Install requirements
+
+```bash
+pip install -r requirements.txt
+```
+
 # API Documentation
 The Rufus API provides the following methods:
 
